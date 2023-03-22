@@ -3,6 +3,7 @@
 #To change the language translante the prompts and edit "lang=en" on google_search (line 140)
 
 # !!!!IMPORTANT!!!! You have to specify a route for a loading gif in the line 388
+# You need openai and google API keys and a CustomSearchEngine ID (lines 24 and 138-139)
 
 import sys
 import openai
@@ -134,8 +135,8 @@ def pre_busqueda(assistant_response):
     new_assistant_response = chat_with_assistant_v2(assistant_response, system_message)
     return new_assistant_response
 
-api_key = "YOUR_KEY_GOES_HERE"  # Reemplaza con tu clave API
-cse_id = "YOUR_ID_GOES_HERE""  # Reemplaza con tu ID de motor de búsqueda personalizado
+api_key = "YOUR_KEY_GOES_HERE"  # Reemplaza con tu clave API (Google API) - Custom Search enabled
+cse_id = "YOUR_ID_GOES_HERE""  # Reemplaza con tu ID de motor de búsqueda personalizado. Custom Search Engine ID
 
 SEARCH_METHOD = "RAPIDO"  # Cambiar a "LENTO" para usar el método lento
 
