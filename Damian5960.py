@@ -53,12 +53,12 @@ def chat_with_assistant_v2(user_message, system_message):
     messages_v2 = [
         {"role": "system", "content": system_message},
         {"role": "user", "content": """[
-  Where does Elon Musk live?
+  "Where does Elon Musk live?",
   "latest Elon Musk news",
   "current location Elon Musk",
   "API geolocation time zone",
   "local time time zone Elon Musk",
-  "Elon Musk sleep time"
+  "Elon Musk sleep time",
   "Recent Elon Musk Twitter Activity",
   "recent posts Elon Musk",
   "Elon Musk sleep schedules",
