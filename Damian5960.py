@@ -85,19 +85,19 @@ def chat_with_assistant_v2(user_message, system_message):
         print(f"Error al llamar a la API de GPT-4: {e}")
         return None
 
-    messages_v2.append({"role": "user", "content": user_message})
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        messages=messages_v2,
-        max_tokens=150,
-        temperature=0.7,
-        top_p=1,
-    )
-    print("Solicitud de chat_with_assistant_v2 completada")  # Agrega esta línea
-    assistant_response = response.choices[0].message['content'].strip()
-    print("***ASSISTANT-RESPONSE***", assistant_response)
-    messages_v2.append({"role": "assistant", "content": assistant_response})
-    return assistant_response
+    #messages_v2.append({"role": "user", "content": user_message})
+    #response = openai.ChatCompletion.create(
+        #model="gpt-4",
+        #messages=messages_v2,
+        #max_tokens=150,
+        #temperature=0.7,
+        #top_p=1,
+    #)
+    #print("Solicitud de chat_with_assistant_v2 completada")  # Agrega esta línea
+    #assistant_response = response.choices[0].message['content'].strip()
+    #print("***ASSISTANT-RESPONSE***", assistant_response)
+    #messages_v2.append({"role": "assistant", "content": assistant_response})
+    #return assistant_response
 
 
 def chat_with_assistant_v3(user_message, system_message):
